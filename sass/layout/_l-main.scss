@@ -1,0 +1,81 @@
+$layout-name: "l-main";
+.#{$layout-name} {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  font-family: "Lexend Deca", sans-serif;
+  max-width: 1440px;
+}
+
+.l-main-container {
+  padding: rem(50 0 0 0);
+  padding-left: 20%;
+  color: white;
+
+  &__title {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  &__text {
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 20%;
+    max-width: 210px;
+  }
+  &__button {
+    padding: rem(15 40);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.box-orange {
+  background-color: var(--color-bright-orange);
+  border-radius: 5px 0px 0px 5px;
+}
+.box-dark {
+  background-color: var(--color-Dark-cyan);
+}
+.box-very {
+  background-color: var(--color-Very-dark-cyan);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.btn-1 {
+  color: var(--color-bright-orange);
+  &:hover {
+    background-color: var(--color-bright-orange);
+    color: white;
+    border: solid 1px;
+  }
+}
+.btn-2 {
+  color: var(--color-Dark-cyan);
+  &:hover {
+    background-color: var(--color-Dark-cyan);
+    color: white;
+    border: solid 1px;
+  }
+}
+.btn-3 {
+  color: var(--color-Very-dark-cyan);
+  &:hover {
+    background-color: var(--color-Very-dark-cyan);
+    color: white;
+    border: solid 1px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .l-main {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+
+    &-container__button {
+      margin-bottom: 20%;
+    }
+  }
+}
