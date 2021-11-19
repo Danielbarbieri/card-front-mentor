@@ -24,13 +24,13 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "sass": "~1.32.6"
   },
-  
   "resolutions": {
     "@nuxtjs/vuetify/**/sass": "1.32.12"
   },
-
-
   "browserslist": [
     "last 2 Chrome versions"
-  ]
+  ],
+  "dependencies": {
+    "core-js": "^3.19.1"
+  }
 }
